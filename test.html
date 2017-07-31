@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GB2312">
+    <title>科学计算器</title>
+    <script language="JavaScript" src="calculator.js">
+    </script>
+
+</head>
+<body align = "center">
+<table border="1" style="position:center;" align="center">
+    <tr align="center">
+        <td><font size="5" face="楷书">输入表达式：</font></td>
+        <td>
+            <style type="text/css">
+                input.text{text-align:center;padding:10px 20px;width:300px;font-size:16px}
+            </style>
+            <input class="text" type="text" id="txt_display" value=""/>
+        </td>
+    </tr>
+    <tr align="center">
+        <td><font size="5" face="楷书">输出结果：</font></td>
+        <td>
+            <style type="text/css">
+                input.text{text-align:center;padding:10px 20px;width:300px;font-size:16px}
+            </style>
+            <input class="text" type="text" id="result_display" value=""/>
+        </td>
+    </tr>
+</table>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "AC"><font size="5" face="楷书">AC</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "1"><font size="5" face="楷书">1</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "2"><font size="5" face="楷书">2</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "3"><font size="5" face="楷书">3</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "+"><font size="5" face="楷书">+</font></button>
+<br><br>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "DEL"><font size="5" face="楷书">←</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "4"><font size="5" face="楷书">4</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "5"><font size="5" face="楷书">5</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "6"><font size="5" face="楷书">6</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "-"><font size="5" face="楷书">-</font></button>
+<br><br>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "%"><font size="5" face="楷书">%</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "7"><font size="5" face="楷书">7</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "8"><font size="5" face="楷书">8</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "9"><font size="5" face="楷书">9</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "*"><font size="5" face="楷书">*</font></button>
+<br><br>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "!"><font size="5" face="楷书">!</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "."><font size="5" face="楷书">.</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "0"><font size="5" face="楷书">0</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "R"><font size="5" face="楷书">R</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "M"><font size="5" face="楷书">M</font></button>
+<br><br>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "/"><font size="5" face="楷书">/</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "^"><font size="5" face="楷书">^</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "sin"><font size="5" face="楷书">sin</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "cos"><font size="5" face="楷书">cos</font></button>
+<button type="button" style="height:40px;width:90px;" onclick=" calcu(this.value)" value = "tan"><font size="5" face="楷书">tan</font></button>
+<br><br>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "asin"><font size="5" face="楷书">asin</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "acos"><font size="5" face="楷书">acos</font></button>
+<button type="button" style="height:40px;width:90px;" onclick=" calcu(this.value)" value = "atan"><font size="5" face="楷书">atan</font></button>
+<button type="button" style="height:40px;width:90px;" onclick=" calcu(this.value)" value = "ln"><font size="5" face="楷书">ln</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "pi"><font size="5" face="楷书">PI</font></button>
+<br><br>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "^"><font size="5" face="楷书">^</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "sqrt"><font size="5" face="楷书">sqrt</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "("><font size="5" face="楷书">(</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = ")"><font size="5" face="楷书">)</font></button>
+<button type="button" style="height:40px;width:90px;" onclick="calcu(this.value)" value = "="><font size="5" face="楷书">=</font></button>
+</body>
+</html>
